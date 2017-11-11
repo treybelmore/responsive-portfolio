@@ -1,0 +1,154 @@
+#name{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 30px;
+	position: relative;
+	left: 100px;
+	width: 25%;
+	text-align: center;
+	margin: 0px;
+	border-bottom: 0px;
+	float: left;
+}
+#second{
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: 1px solid #777777;
+}
+
+.container{
+	background-color: #dddddd;
+	width: 1000px;
+	height: 520px;
+	display: inline-block;
+}
+
+#profile{
+	float: left;
+	margin-right: 10px;
+}
+#text{
+	width: 600px;
+	height: 450px;
+	background-color: white;
+	margin: 30px 100px;
+	position: relative;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 2px solid #4aaaa5;}
+ 
+
+.Connect{
+	position: absolute;
+	top: 135px;
+	right: 370px;
+	text-align: center;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	height: 100px;
+	width: 200px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid #4aaaa5;
+}
+
+.About{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	width: 50%;
+	float: right;
+	padding-top: 50px;
+
+}
+.About li{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	border-right: .5px solid #777777;
+
+}
+.bio{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+
+.header:after{
+	content: "";
+	clear: both;
+	display: table;
+	margin-bottom: 0px;
+}
+
+.connect1 li{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	border-top: .5px solid #777777;
+	padding: 10px;
+	text-align: center;
+	color: #4aaaa5;
+}
+
+footer{
+	background-color: #666666;
+	height: 60px;
+	border-top: 10px solid #4aaaa5;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	padding-top: 50px;
+}
+
+#comment{ width: 400px; height: 100px; }
+
+#box{ width: 400px; }
+
+form{font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+
+.portfolio li{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+/*my original html code is not formatted correctly, so i took my best shot*/
+
+@media screen and (max-width: 980px) {
+	body {width: 100%;}
+	.connect {display: none;}
+}
+
+/*the Connect with me box only is formatted correctly in full desktop mode, so i attempted to hide it when smaller then full screen*/
+
+@media screen and (max-width: 768px) {
+	.header {width: 75%;}
+	.connect {display: none;}
+	#text {width: 100%;}
+	footer {width: 100%;}
+}
+
+@media screen and (max-width: 640px) {
+	.header {width: 65%; position: static;}
+	.connect {display: none;}
+	#text {width: 100%;}
+	footer {width: 100%;}
+}
